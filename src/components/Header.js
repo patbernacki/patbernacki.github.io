@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './Header';
+import React from 'react';
+import './Header.scss';
+
 
 function Header() {
   return (
@@ -9,6 +10,7 @@ function Header() {
           <a href="#education">Education</a>
           <a href="#work">Work</a>
           <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
       </nav>
     </header>
   )

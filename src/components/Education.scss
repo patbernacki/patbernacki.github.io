@@ -1,0 +1,29 @@
+@import '../app.scss';
+
+#education {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $bg-light-variant;
+    color: $text-dark;
+
+    .section-title {
+        margin-bottom: 1rem;
+
+        span {
+            border-bottom: 3px solid $secondary-color;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: .5rem;
+    }
+
+    em {
+        margin-bottom: 2rem;
+    }
+    p {
+        color: grey;
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,39 @@
+@import '../app.scss';
+
+#about {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+    img {
+        border-radius: 50%;
+        border: 3px solid $secondary-color;
+    }
+
+    button {
+        border: 1px solid $primary-color;
+        padding: 10px;
+        color: $text-light;
+        background-color: transparent;
+    }
+
+    hr {
+        width: 40%;
+        margin: 12px auto;
+        border-color: $bg-dark-variant;
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+    }
+
+    p {
+        color: grey;
+    }
+}

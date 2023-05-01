@@ -1,0 +1,20 @@
+@import '../app.scss';
+
+#skills {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $bg-light-variant;
+    color: $text-dark;
+
+    .section-title {
+        margin-bottom: 1rem;
+
+        span {
+            border-bottom: 3px solid $secondary-color;
+        }
+    }
+
+    p {
+        color: grey;
+    }
+}
