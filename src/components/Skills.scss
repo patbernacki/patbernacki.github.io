@@ -2,7 +2,7 @@
 
 #skills {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     background-color: $bg-light-variant;
     color: $text-dark;
 
@@ -16,5 +16,42 @@
 
     p {
         color: grey;
+    }
+
+    .bar {
+        width: 80%;
+        height: 42px;
+        display: inline-block;
+        border-radius: 3px 3px 3px 3px;
+        line-height: 42px;
+        border: 1px solid $bg-dark-variant;
+        background-color: #c2c2c2;
+    }
+    .bar-fill {
+       padding-right: 24px;
+       background: $primary-color;
+       display: inline-block;
+       height: 42px;
+       line-height: 42px;
+       border-radius: 3px 0 0 3px;
+    }
+
+    .python {
+        width: 90%;
+    }
+    .javascript {
+        width: 40%;
+    }
+    .java {
+        width: 30%
+    }
+    .html {
+        width: 50%;
+    }
+    .css {
+        width: 55%;
+    }
+    .sql {
+        width: 70%;
     }
 }

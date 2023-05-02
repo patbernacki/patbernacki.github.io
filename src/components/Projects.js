@@ -4,7 +4,7 @@ import './Projects.scss'
 function Projects() {
     return (
         <section id='projects'>
-            <h1>Check out some of my projects:</h1>
+            <h3>Check out my projects:</h3>
         </section>
     )
 }
