@@ -12,9 +12,9 @@ header {
 
     a {
         display: inline-block;
-        padding: 8px 13px;
+        padding: .5rem .7rem;
         line-height: 32px;
-         text-decoration: none;
+        text-decoration: none;
         text-align: left;
         color: #fff;
      
@@ -29,4 +29,9 @@ header {
         color: $primary-color;
     }
 
+    @media screen and (max-width: 350px) {
+        a {
+            padding: .5rem .6rem;
+        }
+    }
 }

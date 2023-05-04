@@ -3,7 +3,7 @@
 #about {
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
 
 
@@ -49,11 +49,19 @@
         padding: 0;
      }
      .socials li a { 
-        color: #fff; 
-        padding: 5px;
+        color: $text-light; 
+        margin: 0 10px;
+        padding: 0;
 
         :hover {
             color: $primary-color;
+            -webkit-transition: color .1s ease-in-out;
+            -moz-transition: color .1s ease-in-out;
+            -o-transition: color .1s ease-in-out;
+            -ms-transition: color .1s ease-in-out;
+            transition: color .1s ease-in-out;
         }
+
+        
     }
 }

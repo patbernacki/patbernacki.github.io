@@ -1,8 +1,7 @@
 @import '../app.scss';
 
 #work {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
     background-color: $bg-light-variant;
     color: $text-dark;
 
@@ -14,16 +13,26 @@
         }
     }
 
-    .subtitle {
+    .title {
         margin-bottom: .5rem;
     }
 
-    em {
-        margin-bottom: 2rem;
-    }
-    p {
-        color: grey;
+    .subtitle {
         margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    p {
+        color: $bg-dark-variant;
+    }
+
+    .extend-row {
+        margin-top: 2rem;
+    }
+
+    .row-break {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid hsl(38, 12%, 69%);
     }
 
 }

@@ -1,8 +1,8 @@
 @import '../app.scss';
 
 #footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 
     .socials {
@@ -16,11 +16,17 @@
         padding: 0;
      }
      .socials li a { 
-        color: #fff; 
-        padding: 5px;
+        color: grey; 
+        margin: 0 20px;
+        padding: 0;
 
         :hover {
             color: $primary-color;
+            -webkit-transition: color .1s ease-in-out;
+            -moz-transition: color .1s ease-in-out;
+            -o-transition: color .1s ease-in-out;
+            -ms-transition: color .1s ease-in-out;
+            transition: color .1s ease-in-out;
         }
     }
 }

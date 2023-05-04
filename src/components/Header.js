@@ -6,11 +6,10 @@ function Header() {
   return (
     <header id="home">
       <nav id="navbar">
-          <a className="current" href="#home">Home</a>
-          <a href="#education">Education</a>
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a className="smoothscroll" href="#education">Education</a>
+          <a className="smoothscroll" href="#work">Work</a>
+          <a className="smoothscroll" href="#skills">Skills</a>
+          <a className="smoothscroll" href="#projects">Projects</a>
       </nav>
     </header>
   )
