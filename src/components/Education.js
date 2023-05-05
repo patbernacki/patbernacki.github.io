@@ -13,8 +13,10 @@ function Education() {
                         <div className="twelve columns">
                             <h1 className="title">Wilfrid Laurier University</h1>
                             <p className="subtitle"><em>Business and Computer Science • Fall 2020 - Present</em></p>
-                            <p>• 11.05 GPA out of 12</p>
-                            <p>• Entrance scholarship - 95% admission average</p>
+                            <div className="achievements">
+                                <p>• 11.05 GPA out of 12</p>
+                                <p>• Entrance scholarship - 95% admission average</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -3,13 +3,16 @@ import './Header.scss';
 
 
 function Header() {
+  
   return (
     <header id="home">
-      <nav id="navbar">
-          <a className="smoothscroll" href="#education">Education</a>
-          <a className="smoothscroll" href="#work">Work</a>
-          <a className="smoothscroll" href="#skills">Skills</a>
-          <a className="smoothscroll" href="#projects">Projects</a>
+      <nav id="nav-wrap">
+        <ul id="nav" className="nav">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
       </nav>
     </header>
   )

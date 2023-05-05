@@ -22,11 +22,6 @@
 
         :hover {
             color: $primary-color;
-            -webkit-transition: color .1s ease-in-out;
-            -moz-transition: color .1s ease-in-out;
-            -o-transition: color .1s ease-in-out;
-            -ms-transition: color .1s ease-in-out;
-            transition: color .1s ease-in-out;
         }
     }
 }

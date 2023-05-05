@@ -11,7 +11,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/profilepic.jpg" alt="" className="item-img"/>
+                                    <img src="images/type_racer.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Type Racer</h5>
@@ -24,7 +24,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/profilepic.jpg" alt="" className="item-img"/>
+                                    <img src="images/type_racer.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Type Racer</h5>
@@ -37,7 +37,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/profilepic.jpg" alt="" className="item-img"/>
+                                    <img src="images/type_racer.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Type Racer</h5>

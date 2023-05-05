@@ -1,8 +1,8 @@
 @import '../app.scss';
 
 #projects {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
     background-color: $bg-dark-variant;
     text-align: center;
 
@@ -21,7 +21,6 @@
     }
     #projects-wrapper .columns { margin-bottom: 36px; }
     .project-item .item-wrap {
-    background: #fff;
     overflow: hidden;
     position: relative;
 
@@ -81,6 +80,8 @@
     }
     .project-item .item-wrap img {
     vertical-align: bottom;
+    height: 100%;
+    width: 100%;
     }
     .project-item .project-item-meta { padding: 18px }
     .project-item .project-item-meta h5 {
@@ -148,26 +149,4 @@
     }
     .popup-modal a:hover {	color: #00CCCC; }
     .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
-
-
-    /* fadein/fadeout effect for modal popup
-    /* ------------------------------------------------------------------ */
-
-    /* content at start */
-    .mfp-fade.mfp-wrap .mfp-content .popup-modal {
-    opacity: 0;
-    -webkit-transition: all 200ms ease-in-out;
-        -moz-transition: all 200ms ease-in-out;
-        -o-transition: all 200ms ease-in-out;
-        -ms-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-    }
-    /* content fadein */
-    .mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
-    opacity: 1;
-    }
-    /* content fadeout */
-    .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
-    opacity: 0;
-    }
 }
