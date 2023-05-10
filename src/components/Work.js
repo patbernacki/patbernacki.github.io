@@ -14,7 +14,13 @@ function Work() {
                             <h1 className="title">UMI Solutions</h1>
                             <p className="subtitle"><em>Business Administration & IT Assistant • Jan 2023 - Apr 30</em></p>
                             <div className="achievements">
-                                <p>• some achievements</p>
+                                <p>• Developed a Sales Dashboard web application using Flask, Dash, Bootstrap, and SQLAlchemy</p>
+                                <p>• Manufactured and maintained a SQLite database with user account information</p>
+                                <p>• Application was served with Waitress and ran on company’s server as a Windows Service using NSSM</p>
+                                <p>• The Sales Dashboard is used almost daily by over 8 employees during data analysis.</p>
+                                <p>• Built a scraper tool using RegEx in Python that converts information from PDF purchase orders into CSV format for faster SAP data entry.</p>
+                                <p>• Wrote complex queries inside of SQL Server to compose insightful Excel reports.</p>
+                                <p>• Created scheduled jobs in SQL Server Agent to improve automation practices.</p>
                             </div>
                         </div>
                     </div>
