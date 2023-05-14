@@ -17,12 +17,16 @@ function Skills() {
                             <span className="bar"><span className="bar-fill javascript"></span></span>
                             <h3>Java</h3>
                             <span className="bar"><span className="bar-fill java"></span></span>
+                            <h3>C</h3>
+                            <span className="bar"><span className="bar-fill c"></span></span>
                             <h3>HTML</h3>
                             <span className="bar"><span className="bar-fill html"></span></span>
                             <h3>CSS</h3>
                             <span className="bar"><span className="bar-fill css"></span></span>
                             <h3>SQL</h3>
                             <span className="bar"><span className="bar-fill sql"></span></span>
+                            <h3>Git</h3>
+                            <span className="bar"><span className="bar-fill git"></span></span>
                         </div>
                     </div>
                 </div>

@@ -10,12 +10,12 @@ function Projects() {
                     <div id="projects-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
                         <div className="columns project-item">
                             <div className="item-wrap">
-                                <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/type_racer.png" alt="" className="item-img"/>
+                                <a href="https://github.com/patbernacki/type_racer">
+                                    <img src="./portfolio/images/type-racer.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Type Racer</h5>
-                                            <p>Tests typing speed</p>
+                                            <p>A web app that tests typing speed</p>
                                         </div>
                                     </div>
                                 </a>
@@ -23,12 +23,12 @@ function Projects() {
                         </div>
                         <div className="columns project-item">
                             <div className="item-wrap">
-                                <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/type_racer.png" alt="" className="item-img"/>
+                                <a href="https://github.com/patbernacki/Discord-Music-Bot">
+                                    <img src="./portfolio/images/discord-music-bot.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
-                                            <h5>Type Racer</h5>
-                                            <p>Tests typing speed</p>
+                                            <h5>Clef</h5>
+                                            <p>A discord bot that streams music from youtube</p>
                                         </div>
                                     </div>
                                 </a>
@@ -36,12 +36,12 @@ function Projects() {
                         </div>
                         <div className="columns project-item">
                             <div className="item-wrap">
-                                <a href="https://github.com/Patrick-Bernacki/type_racer">
-                                    <img src="images/type_racer.png" alt="" className="item-img"/>
+                                <a href="https://github.com/Patrick-Bernacki/super_hexagon">
+                                    <img src="./portfolio/images/super-hexagon.png" alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
-                                            <h5>Type Racer</h5>
-                                            <p>Tests typing speed</p>
+                                            <h5>Super Hexagon</h5>
+                                            <p>A minimal action/rhythm game, inspired by the original Super Hexagon</p>
                                         </div>
                                     </div>
                                 </a>

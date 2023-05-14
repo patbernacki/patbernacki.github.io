@@ -13,7 +13,7 @@ function Footer() {
                     <a href="https://www.linkedin.com/in/patrickbernacki/">
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
-                    <a href="https://github.com/Patrick-Bernacki">
+                    <a href="https://github.com/patbernacki">
                         <FontAwesomeIcon icon={faGithub}/>
                     </a>
                     <a href="mailto: bern1600@mylaurier.ca">

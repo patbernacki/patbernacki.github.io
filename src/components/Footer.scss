@@ -9,19 +9,21 @@
         padding: 0;
         font-size: 1.8rem;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-     }
-     .socials li {
-        display: inline-block;
-        margin: 0 15px;
-        padding: 0;
-     }
-     .socials li a { 
-        color: grey; 
-        margin: 0 20px;
-        padding: 0;
 
-        :hover {
-            color: $primary-color;
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 0;
+
+            a {
+                color: grey; 
+                margin: 0 20px;
+                padding: 0;
+
+                :hover {
+                    color: $primary-color;
+                }
+            }
         }
-    }
+     }
 }

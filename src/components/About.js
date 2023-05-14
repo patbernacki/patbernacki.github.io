@@ -8,7 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function About() {
     return(
         <section id='about'>
-            <img className='profile-pic' src="images/profilepic.jpg" alt="" />
+            <img className='profile-pic' src="./portfolio/images/profilepic.jpg" alt="" />
             <h1>Patrick Bernacki</h1>
             <p>Student | Aspiring Developer</p>
             <hr />
@@ -17,7 +17,7 @@ function About() {
                     <a href="https://www.linkedin.com/in/patrickbernacki/">
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
-                    <a href="https://github.com/Patrick-Bernacki">
+                    <a href="https://github.com/patbernacki">
                         <FontAwesomeIcon icon={faGithub}/>
                     </a>
                     <a href="mailto: bern1600@mylaurier.ca">
