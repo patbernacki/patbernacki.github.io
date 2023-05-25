@@ -12,7 +12,7 @@ function Work() {
                     <div className="row item">
                         <div className="twelve columns">
                             <h1 className="title">UMI Solutions</h1>
-                            <h1 className="subtitle"><em>Business Administration & IT Assistant • Jan 2023 - Apr 30</em></h1>
+                            <h1 className="subtitle"><em>Software Developer • Jan 2023 - Apr 30</em></h1>
                             <div className="achievements">
                                 <p>• Developed a Sales Dashboard web application that was used daily to discover outlying sales data (Flask, Dash, Bootstrap, and SQLAlchemy).</p>
                                 <p>• Manufactured and maintained a SQLite database with user account information to employ a custom and secure user authentication system for the Sales Dashboard.</p>
