@@ -11,7 +11,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/patbernacki/type_racer">
-                                    <img src="images/type-racer.png" alt="" className="item-img"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/type-racer.png`} alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Type Racer</h5>
@@ -24,7 +24,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/patbernacki/Discord-Music-Bot">
-                                    <img src="images/discord-music-bot.png" alt="" className="item-img"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/discord-music-bot.png`} alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Clef</h5>
@@ -37,7 +37,7 @@ function Projects() {
                         <div className="columns project-item">
                             <div className="item-wrap">
                                 <a href="https://github.com/Patrick-Bernacki/super_hexagon">
-                                    <img src="images/super-hexagon.png" alt="" className="item-img"/>
+                                    <img src={`${process.env.PUBLIC_URL}/images/super-hexagon.png`} alt="" className="item-img"/>
                                     <div className="overlay">
                                         <div className="project-item-meta">
                                             <h5>Super Hexagon</h5>
