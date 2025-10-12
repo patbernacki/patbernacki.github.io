@@ -1,66 +1,77 @@
 @import '../app.scss';
 
 #skills {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    background-color: $bg-light-variant;
-    color: $text-dark;
+  padding: 4rem 1.5rem;
+  padding-top: 0;
+  background-color: $bg-light-variant;
+  color: $text-dark;
 
-    .section-title {
-        margin-bottom: 1rem;
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    text-align: center;
 
-        span {
-            border-bottom: 3px solid $secondary-color;
-        }
+    span {
+      border-bottom: 3px solid $secondary-color;
+      padding-bottom: 0.3rem;
     }
+  }
 
-    .bar {
-        width: 80%;
-        height: 42px;
-        display: inline-block;
-        border-radius: 3px 3px 3px 3px;
-        line-height: 42px;
-        border: 1px solid $bg-dark-variant;
-        background-color: #c2c2c2;
-        margin-bottom: 1rem;
-    }
+  .skills-category {
+    text-align: center;
+    margin-bottom: 2.5rem;
 
-    @media only screen and (max-width: 767px) {
-        .bar {
-            width: 100%;
-        }
-    }
-    
-    .bar-fill {
-       background: $primary-color;
-       display: inline-block;
-       height: 42px;
-       line-height: 42px;
-       border-radius: 3px 0 0 3px;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $secondary-color;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid rgba($secondary-color, 0.3);
+      display: inline-block;
+      padding-bottom: 0.3rem;
     }
 
-    .python {
-        width: 90%;
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    .javascript {
-        width: 60%;
+
+    .skill-pill {
+      background-color: rgba($secondary-color, 0.15);
+      color: $bg-dark-variant;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $text-light;
+        transform: translateY(-3px);
+        border-color: rgba(0, 0, 0, 0.1);
+      }
     }
-    .java {
-        width: 40%
+  }
+
+  @media (max-width: 768px) {
+    .skills-category h3 {
+      font-size: 1.2rem;
     }
-    .c {
-        width: 20%;
+
+    .skills-list {
+      gap: 0.5rem;
     }
-    .html {
-        width: 70%;
+
+    .skill-pill {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.9rem;
     }
-    .css {
-        width: 75%;
-    }
-    .sql {
-        width: 80%;
-    }
-    .git {
-        width: 70%;
-    }
+  }
 }

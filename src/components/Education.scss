@@ -1,38 +1,100 @@
 @import '../app.scss';
 
 #education {
-    padding-top: 4rem;
+    padding: 5rem 1.5rem;
     background-color: $bg-light-variant;
     color: $text-dark;
+    text-align: center;
 
     .section-title {
-        margin-bottom: 1rem;
-
+        font-weight: 600;
+        margin-bottom: 3rem;
+        
         span {
             border-bottom: 3px solid $secondary-color;
+            padding-bottom: 0.2rem;
         }
     }
 
-    .title {
-        margin-bottom: .5rem;
-    }
-
-    .subtitle {
-        margin-bottom: 1rem;
-        font-size: 1.1rem;
-    }
-
-    p {
+    .education-card {
         color: $bg-dark-variant;
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto 2.5rem;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .title {
+            font-size: 1.4rem;
+            color: $bg-dark-variant;
+        }
+
+        .subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-style: italic;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+
+            .degrees {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .date {
+                font-style: normal;
+                color: hsl(15, 5%, 35%);
+                font-weight: 500;
+                font-size: 0.95rem;
+            }
+        }
+
+        .achievements {
+
+            li {
+                position: relative;
+                padding-left: 1.2rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.5;
+                color: $bg-dark-variant;
+
+                &::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: $secondary-color;
+                font-weight: bold;
+                }
+            }
+        }
     }
 
-    .row-break {
-        padding-bottom: 3rem;
-        border-bottom: 1px solid hsl(38, 12%, 69%);
-    }
+    @media (max-width: 768px) {
+        padding: 3rem 1rem;
 
-    .achievements p {
-        margin-bottom: 0.2rem;
-    }
+        .section-title {
+            font-size: 1.75rem;
+        }
 
+        .work-card {
+            padding: 1.5rem;
+        }
+
+        .subtitle {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .date {
+                margin-top: 0.3rem;
+            }
+        }
+  }
 }
