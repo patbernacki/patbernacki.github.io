@@ -6,7 +6,7 @@ function Projects() {
         <section id='projects'>
             <div className="row">
                 <div className="twelve columns collapsed">
-                    <h3 id='projects-section-title'>Check out my projects:</h3>
+                    <h1 id="projects-section-title"><span>Check out my projects:</span></h1>
                     <div id="projects-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
                         <div className="columns project-item">
                             <div className="item-wrap">

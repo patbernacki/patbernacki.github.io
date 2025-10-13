@@ -1,9 +1,7 @@
 @import '../app.scss';
 
 #skills {
-  padding: 4rem 1.5rem;
-  padding-top: 0;
-  background-color: $bg-light-variant;
+  background-color: darken($bg-light-variant, 4%);
   color: $text-dark;
 
   .section-title {

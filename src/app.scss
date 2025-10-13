@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-$bg-color: hsl(0, 5.66%, 10.39%);
-$bg-dark-variant: hsl(15, 3.23%, 24.31%);
-$bg-light-variant: hsl(38.18, 20%, 78.43%);
-$primary-color: hsl(11.33, 81.82%, 56.86%);
-$secondary-color: hsl(186.38, 25.41%, 36.27%);
-$text-light: #fff;
-$text-dark: #000;
+$bg-color: #0f1115;
+$bg-dark-variant: #1a1d23;
+$bg-light-variant: #e8e8ec;
+$primary-color: #ff6b6b; // coral red accent
+$secondary-color: #00bfa6; // mint accent
+$text-light: #f7f7f8;
+$text-dark: #1a1a1a;
 
 * {
   margin: 0;
@@ -27,9 +27,81 @@ $text-dark: #000;
 }
 
 body {
-    background-color: $bg-color;
-    font-family: 'Poppins', sans-serif;
+  background-color: $bg-color;
+  font-family: 'Poppins', sans-serif;
+  color: $text-light;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 80px;
+  animation: fadeIn 0.8s ease forwards;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h1, .section-title {
+    font-size: 1.75rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+    ul {
+
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
     color: $text-light;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
 }
 
 
@@ -248,4 +320,10 @@ properly.
 	margin-left: auto !important;
 	margin-right: auto !important;
 	text-align: center !important;
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; // hide hamburger on desktop
+  }
 }

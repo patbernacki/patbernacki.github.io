@@ -1,49 +1,107 @@
 @import '../app.scss';
 
 header {
+  position: fixed;
+  top: -80px; // hidden initially
+  width: 100%;
+  background: rgba(15, 17, 21, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: all 0.4s ease;
+
+  &.visible {
+    top: 0;
+    opacity: 1;
+  }
+
+  #nav-wrap {
+    display: flex;
+    justify-content: space-between; // logo left, nav right
+    align-items: center;
+    padding: 0.8rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .logo a {
+    color: $text-light;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  a {
+    color: $text-light;
+    font-weight: 500;
+    letter-spacing: 0.4px;
     position: relative;
-    min-height: 60px;
-    width: 100%;
-    background-size: cover !important;
-     -webkit-background-size: cover !important;
-    text-align: center;
-    overflow: hidden;
+    transition: color 0.3s ease;
 
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: $primary-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
     #nav-wrap {
-        position: fixed;
-        width: 100%;
-        background-color: $bg-color;
-        z-index: 100;
+      padding: 0.6rem 1.2rem;
     }
 
-
-    li {
-        display: inline-block;
-        padding: .5rem .7rem;
-        line-height: 32px;
+    ul {
+      flex-direction: column;
+      background: rgba(15, 17, 21, 0.95);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 60px;
+      right: 1rem;
+      border-radius: 12px;
+      padding: 1rem;
+      display: none;
     }
 
-    a {
-        text-decoration: none;
-        text-align: left;
-        color: #fff;
-         -webkit-transition: color .2s ease-in-out;
-         -moz-transition: color .2s ease-in-out;
-         -o-transition: color .2s ease-in-out;
-         -ms-transition: color .2s ease-in-out;
-         transition: color .2s ease-in-out;
+    ul.active {
+      display: flex;
     }
 
-    a:hover {
-        color: $primary-color;
+    .menu-toggle {
+      display: block;
+      color: $text-light;
+      font-size: 1.6rem;
+      cursor: pointer;
+      margin-right: 0.5rem;
     }
-    a:active {
-        color: $primary-color;
-    }
-
-    @media screen and (max-width: 350px) {
-        li {
-            padding: .5rem .6rem;
-        }
-    }
+  }
 }
