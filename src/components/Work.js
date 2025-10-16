@@ -77,12 +77,11 @@ function Work() {
         <div className="tech-stack">
           <h4>Technologies Used:</h4>
           <div className="tech-list">
+            <span>TypeScript</span>
             <span>Node.js</span>
             <span>SPFx</span>
-            <span>React</span>
-            <span>TypeScript</span>
             <span>SharePoint</span>
-            <span>Microsoft Teams</span>
+            <span>Microsoft Graph API</span>
           </div>
         </div>
       </div>

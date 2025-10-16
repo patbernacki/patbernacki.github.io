@@ -18,11 +18,14 @@
     color: $bg-dark-variant;
     text-align: left;
     max-width: 800px;
-    margin: 0 auto 2.5rem;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
 
     &:hover {
       transform: translateY(-4px);
@@ -63,20 +66,18 @@
           content: "•";
           position: absolute;
           left: 0;
-          color: $secondary-color;
           font-weight: bold;
         }
       }
     }
   }
 
-  .tech-stack {
+.tech-stack {
   margin-top: 1.2rem;
 
   h4 {
     font-size: 1rem;
     font-weight: 600;
-    color: $secondary-color;
     margin-bottom: 0.6rem;
   }
 
@@ -86,17 +87,18 @@
     gap: 0.5rem;
 
     span {
-      background-color: rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba($secondary-color, 0.5);
-      color: $bg-dark-variant;
+      background-color: $bg-dark-variant;
+      color: $text-light;
       font-size: 0.85rem;
       font-weight: 500;
-      padding: 0.3rem 0.8rem;
-      border-radius: 8px;
+      padding: 0.35rem 0.8rem;
+      border-radius: 25px;
+      border: 1px solid transparent;
       transition: all 0.2s ease;
     }
   }
 }
+
 
 
   @media (max-width: 768px) {
