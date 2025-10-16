@@ -11,17 +11,17 @@ function Skills() {
     {
       title: "Frameworks",
     //   icon: "🧱",
-      skills: ["React", "Node.js", "Express.js", "Flask", "Dash", "SPFx", "Bootstrap", "SQLAlchemy"],
+      skills: ["React", "Node.js", "Express.js", "Flask", "Plotly Dash", "SPFx", "Bootstrap"],
     },
     {
       title: "Libraries",
     //   icon: "📚",
-      skills: ["NumPy", "Pandas", "Matplotlib", "Plotly", "TensorFlow", "React Router", "Axios", "JWT"],
+      skills: ["NumPy", "Pandas", "Matplotlib", "Puppeteer", "Axios", "JWT", "SQLAlchemy"],
     },
     {
       title: "Technologies",
     //   icon: "🔧",
-      skills: ["Git", "Docker", "AWS", "Cypress", "Puppeteer", "VS Code", "SQL Server", "MySQL"],
+      skills: ["Git", "Docker", "AWS", "Cypress", "VS Code", "SQL Server", "MySQL"],
     },
   ];
 
