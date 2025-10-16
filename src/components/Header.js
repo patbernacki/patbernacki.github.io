@@ -9,16 +9,17 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
+      setShowHeader(window.scrollY > 80);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close menu when a link is clicked
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <header id="home" className={showHeader ? 'visible' : ''}>
@@ -32,11 +33,11 @@ function Header() {
         </div>
 
         <ul id="nav" className={`nav ${menuOpen ? 'active' : ''}`}>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about" onClick={handleLinkClick}>About Me</a></li>
+          <li><a href="#education" onClick={handleLinkClick}>Education</a></li>
+          <li><a href="#work" onClick={handleLinkClick}>Experience</a></li>
+          <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+          <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
         </ul>
       </nav>
     </header>

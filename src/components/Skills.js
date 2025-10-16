@@ -2,42 +2,49 @@ import React from "react";
 import "./Skills.scss";
 
 function Skills() {
-    const skillCategories = [
-        {
-            title: "Languages",
-            skills: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS", "VBA"],
-        },
-        {
-            title: "Frameworks",
-            skills: ["React", "Node.js", "Express.js", "Flask", "Dash", "SPFx", "Bootstrap", "SQLAlchemy"],
-        },
-        {
-            title: "Technologies",
-            skills: ["Git", "Docker", "AWS", "Cypress", "Puppeteer", "VS Code", "SQL Server", "MySQL"],
-        },
-    ];
+  const skillCategories = [
+    {
+      title: "Languages",
+    //   icon: "💻",  // or use FontAwesome/Icon component if you like
+      skills: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS", "VBA"],
+    },
+    {
+      title: "Frameworks",
+    //   icon: "🧱",
+      skills: ["React", "Node.js", "Express.js", "Flask", "Dash", "SPFx", "Bootstrap", "SQLAlchemy"],
+    },
+    {
+      title: "Libraries",
+    //   icon: "📚",
+      skills: ["NumPy", "Pandas", "Matplotlib", "Plotly", "TensorFlow", "React Router", "Axios", "JWT"],
+    },
+    {
+      title: "Technologies",
+    //   icon: "🔧",
+      skills: ["Git", "Docker", "AWS", "Cypress", "Puppeteer", "VS Code", "SQL Server", "MySQL"],
+    },
+  ];
 
-    return (
-        <section id="skills">
-            <h1 className="section-title"><span>Skills</span></h1>
-            <div className="row">
-                <div className="twelve columns collapsed">
-                    <div id="skills-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
-                        {skillCategories.map((category, index) => (
-                            <div key={index} className="columns skills-category">
-                                <h3>{category.title}</h3>
-                                <div className="skills-list">
-                                    {category.skills.map((skill, idx) => (
-                                        <span key={idx} className="skill-pill">{skill}</span>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+  return (
+    <section id="skills">
+      <h1 className="section-title"><span>Skills</span></h1>
+      <div className="skills-wrapper">
+        {skillCategories.map((category, index) => (
+          <div key={index} className="skills-category">
+            <h3>
+              {category.icon && <span className="cat-icon">{category.icon}</span>} 
+              {category.title}
+            </h3>
+            <div className="skills-list">
+              {category.skills.map((skill, idx) => (
+                <span key={idx} className="skill-item">{skill}</span>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Skills;

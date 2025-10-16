@@ -1,57 +1,76 @@
 import React from "react";
-import './Projects.scss';
+import "./Projects.scss";
 
 function Projects() {
-    return (
-        <section id='projects'>
-            <div className="row">
-                <div className="twelve columns collapsed">
-                    <h1 id="projects-section-title"><span>Check out my projects:</span></h1>
-                    <div id="projects-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
-                        <div className="columns project-item">
-                            <div className="item-wrap">
-                                <a href="https://github.com/patbernacki/type_racer">
-                                    <img src={`${process.env.PUBLIC_URL}/images/type-racer.png`} alt="" className="item-img"/>
-                                    <div className="overlay">
-                                        <div className="project-item-meta">
-                                            <h5>Type Racer</h5>
-                                            <p>A web app that tests typing speed</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="columns project-item">
-                            <div className="item-wrap">
-                                <a href="https://github.com/patbernacki/Discord-Music-Bot">
-                                    <img src={`${process.env.PUBLIC_URL}/images/discord-music-bot.png`} alt="" className="item-img"/>
-                                    <div className="overlay">
-                                        <div className="project-item-meta">
-                                            <h5>Clef</h5>
-                                            <p>A discord bot that streams music from youtube</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="columns project-item">
-                            <div className="item-wrap">
-                                <a href="https://github.com/Patrick-Bernacki/super_hexagon">
-                                    <img src={`${process.env.PUBLIC_URL}/images/super-hexagon.png`} alt="" className="item-img"/>
-                                    <div className="overlay">
-                                        <div className="project-item-meta">
-                                            <h5>Super Hexagon</h5>
-                                            <p>A minimal action/rhythm game, inspired by the original Super Hexagon</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  const projects = [
+    {
+      title: "Recipe Suggestor",
+      description: "A full-stack recipe app that suggests dishes based on ingredients you have at home.",
+      image: `${process.env.PUBLIC_URL}/images/recipe-suggestor.png`,
+      link: "https://recipe-suggestor-chi.vercel.app/",
+      technologies: ["React", "TailwindCSS", "Node.js", "Express.js", "MySQL"],
+    },
+    {
+      title: "Type Racer",
+      description: "A web app that tests typing speed and accuracy in real-time.",
+      image: `${process.env.PUBLIC_URL}/images/type-racer.png`,
+      link: "https://github.com/patbernacki/type_racer",
+      technologies: ["JavaScript", "HTML", "CSS"],
+    },
+    {
+      title: "Clef",
+      description: "A Discord bot that streams music from YouTube with queue management and controls.",
+      image: `${process.env.PUBLIC_URL}/images/discord-music-bot.png`,
+      link: "https://github.com/patbernacki/Discord-Music-Bot",
+      technologies: ["JavaScript", "DiscordJS"],
+    },
+    {
+      title: "Super Hexagon",
+      description: "A minimal action/rhythm game inspired by the original Super Hexagon.",
+      image: `${process.env.PUBLIC_URL}/images/super-hexagon.png`,
+      link: "https://github.com/Patrick-Bernacki/super_hexagon",
+      technologies: ["Python", "Pygame"],
+    },
+  ];
+
+  return (
+    <section id="projects">
+      <h1 id="projects-section-title">
+        <span>Projects</span>
+      </h1>
+
+      <div id="projects-grid">
+        {projects.map((project, index) => (
+          <div
+            className={`project-card ${index % 2 !== 0 ? "reverse" : ""}`}
+            key={index}
+          >
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
             </div>
-        </section>
-    )
+
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-list">
+                {project.technologies.map((tech, i) => (
+                  <span key={i} className="tech-pill">{tech}</span>
+                ))}
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View Project →
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Projects
+export default Projects;

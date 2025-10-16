@@ -9,7 +9,7 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Ollon</h2>
         <h3 className="subtitle">
-          Software Developer <span className="date">Sep. 2024 - Dec. 2024, Sep. 2023 - Dec. 2023</span>
+          Software Developer (Internship) <span className="date">Sep. 2024 - Dec. 2024, Sep. 2023 - Dec. 2023</span>
         </h3>
         <ul className="achievements">
           <li>Developed a full-stack web application from the ground up using React, Node.js, and MySQL to streamline data management for a law firm.</li>
@@ -29,6 +29,7 @@ function Work() {
             <span>Cypress</span>
             <span>Testmo</span>
             <span>AWS</span>
+            <span>Docker</span>
             <span>Puppeteer</span>
           </div>
         </div>
@@ -37,7 +38,7 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Multi Flow Solutions</h2>
         <h3 className="subtitle">
-          Software Developer <span className="date">Jan 2023 – Apr 2023</span>
+          Software Developer (Internship) <span className="date">Jan 2023 – Apr 2023</span>
         </h3>
         <ul className="achievements">
           <li>Developed a Sales Dashboard web application used daily to analyze sales outliers (Flask, Dash, Bootstrap, SQLAlchemy).</li>
@@ -56,7 +57,6 @@ function Work() {
             <span>SQLAlchemy</span>
             <span>SQLite</span>
             <span>SQL Server</span>
-            <span>RegEx</span>
             <span>Waitress</span>
             <span>NSSM</span>
           </div>
@@ -66,7 +66,7 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Creospark</h2>
         <h3 className="subtitle">
-          Technology Consulting Assistant <span className="date">May 2022 – Aug 2022</span>
+          Technology Consulting Assistant (Internship) <span className="date">May 2022 – Aug 2022</span>
         </h3>
         <ul className="achievements">
           <li>Developed Adaptive Card Extensions (ACE) / Mini Apps using Node.js and SPFx.</li>
