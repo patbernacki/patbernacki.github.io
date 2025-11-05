@@ -9,13 +9,13 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Ollon</h2>
         <h3 className="subtitle">
-          Software Developer (Internship) <span className="date">Sep. 2024 - Dec. 2024, Sep. 2023 - Dec. 2023</span>
+          Software Developer, Co-op <span className="date">Sep. 2024 - Dec. 2024, Sep. 2023 - Dec. 2023</span>
         </h3>
         <ul className="achievements">
-          <li>Developed a full-stack web application from the ground up using React, Node.js, and MySQL to streamline data management for a law firm.</li>
-          <li>Led backend integration of Tick and Runn APIs for visualization in Metabase, optimizing data processing logic and reducing runtime from 5 hours to ~10minutes.</li>
-          <li>Collaborated on logical bug fixes and new features for a clinic’s website, improving stability and user experience.</li>
-          <li>Wrote E2E tests in Cypress and documented test cases in Testmo to ensure a smooth PHP migration for a client.</li>
+          <li>Developed a full-stack case management web application for a law firm using React, Node.js, and MySQL, featuring secure authentication, filterable record management, and customizable forms.</li>
+          <li>Led ETL integration of project management and time-tracking APIs using JavaScript, creating data visualization dashboards in Metabase and improving past query performance by 50x.</li>
+          <li>Resolved bugs and implemented new features for a clinic website, improving stability and user satisfaction.</li>
+          <li>Developed and executed E2E tests in Cypress and Testmo to ensure a smooth PHP migration for a client.</li>
         </ul>
         <div className="tech-stack">
           <h4>Technologies Used:</h4>
@@ -38,14 +38,13 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Multi Flow Solutions</h2>
         <h3 className="subtitle">
-          Software Developer (Internship) <span className="date">Jan 2023 – Apr 2023</span>
+          Software Developer, Co-op <span className="date">Jan 2023 – Apr 2023</span>
         </h3>
         <ul className="achievements">
-          <li>Developed a Sales Dashboard web application used daily to analyze sales outliers (Flask, Dash, Bootstrap, SQLAlchemy).</li>
-          <li>Built and maintained a SQLite database with secure user authentication.</li>
-          <li>Deployed software with Waitress and hosted it as a Windows Service using NSSM.</li>
-          <li>Created a Python RegEx scraper converting purchase order PDFs to CSV for faster SAP data entry.</li>
-          <li>Wrote SQL Server queries to extract insights for the sales team and automated tasks with SQL Server Agent jobs.</li>
+          <li>Created a Sales Dashboard web application that was used daily to discover outlying sales data (Flask, Dash, Bootstrap, and SQLAlchemy).</li>
+          <li>Implemented a secure SQLite authentication and authorization system to manage dashboard user accounts.</li>
+          <li>Built a Python RegEx scraper converting company invoices from PDF to CSV for faster SAP data entry.</li>
+          <li>Automated SQL Server workflows with stored procedures and scheduled jobs, streamlining report generation and improving data accuracy for sales analysis.</li>
         </ul>
         <div className="tech-stack">
           <h4>Technologies Used:</h4>
@@ -66,13 +65,13 @@ function Work() {
       <div className="work-card">
         <h2 className="title">Creospark</h2>
         <h3 className="subtitle">
-          Technology Consulting Assistant (Internship) <span className="date">May 2022 – Aug 2022</span>
+          Technology Consulting Assistant, Co-op <span className="date">May 2022 – Aug 2022</span>
         </h3>
         <ul className="achievements">
-          <li>Developed Adaptive Card Extensions (ACE) / Mini Apps using Node.js and SPFx.</li>
+          <li>Developed three SharePoint Mini Apps (Adaptive Card Extensions) using TypeScript, Node.js, SPFx, and Microsoft Graph API, including a Recent Content Feed, a Company Holiday Calendar, and an internal Buy & Sell Marketplace with messaging and image uploads.</li>
           <li>Collaborated with UI/UX designers to refine app interfaces and improve user experience.</li>
           <li>Created functional specification documents for client-facing custom software.</li>
-          <li>Delivered a live webinar on hosting effective MS Teams meetings, now used for new employee onboarding.</li>
+          <li>Delivered a company-wide webinar on hosting effective MS Teams meetings. A recording of the webinar was later adopted as a standard onboarding resource.</li>
         </ul>
         <div className="tech-stack">
           <h4>Technologies Used:</h4>

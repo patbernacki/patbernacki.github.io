@@ -15,9 +15,10 @@ function Education() {
                     <em className="date">Sep. 2020 - Aug. 2025</em>
                 </h1>
                 <div className="achievements">
-                    <li>10.96 GPA out of 12</li>
-                    <li>Spring 2024 ICE Finalist</li>
-                    <li>Entrance scholarship - 95% admission average</li>
+                    <li>Overall GPA: 10.96 / 12</li>
+                    <li>Computer Science GPA: 11.43 / 12</li>
+                    <li>2024 Spring Integrated Case Exercise (ICE) Finalist: designed and pitched a market expansion strategy to industry judges; placed top 4 among 80 teams.
+                    </li>
                 </div>
 
             </div>

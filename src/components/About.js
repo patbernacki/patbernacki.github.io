@@ -28,13 +28,15 @@ function About() {
             <div className="about-section">
                 <h2>About Me</h2>
                 <p className="description">
-                    I’m a recent <strong>Wilfrid Laurier University graduate</strong> with a strong passion for coding and building impactful digital solutions. 
-                    Through various internship experiences, I’ve developed a solid foundation in <strong>full-stack development</strong>, 
-                    working on projects that combine creativity, problem-solving, and user-focused design.
+                    I’m a recent <strong>Wilfrid Laurier University graduate</strong> with a strong passion for coding and building digital solutions that make an impact. 
+
                 </p>
                 <p className="description">
-                    I love exploring new technologies, improving my skills, and collaborating on meaningful projects. 
-                    Outside of coding, I’m an avid soccer fan and enjoy playing video games in my free time.
+                    Through various co-op experiences, I honed my <strong>frontend</strong> and <strong>backend</strong> development skills in <strong>agile</strong> teams, contributing to projects that combined creativity, problem-solving, and user-centered design.
+                </p>
+                <p className="description">
+                    I love exploring new technologies and building projects that help me grow as a developer. 
+                    Outside of coding, I'm an avid soccer fan, enjoy playing video games, and dabble in some stock trading.
                 </p>
             </div>
         </section>

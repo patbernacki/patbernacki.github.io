@@ -5,23 +5,19 @@ function Skills() {
   const skillCategories = [
     {
       title: "Languages",
-    //   icon: "💻",  // or use FontAwesome/Icon component if you like
       skills: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS", "VBA"],
     },
     {
       title: "Frameworks",
-    //   icon: "🧱",
-      skills: ["React", "Node.js", "Express.js", "Flask", "Plotly Dash", "SPFx", "Bootstrap"],
+      skills: ["React", "Node.js", "Express.js", "Flask", "Plotly Dash", "SPFx", "Bootstrap", "Cypress"],
     },
     {
       title: "Libraries",
-    //   icon: "📚",
-      skills: ["NumPy", "Pandas", "Matplotlib", "Puppeteer", "Axios", "JWT", "SQLAlchemy"],
+      skills: ["Pandas", "NumPy", "Matplotlib", "OpenCV", "Puppeteer", "Axios", "Axios", "SQLAlchemy"],
     },
     {
       title: "Technologies",
-    //   icon: "🔧",
-      skills: ["Git", "Docker", "AWS", "Cypress", "VS Code", "SQL Server", "MySQL"],
+      skills: ["Git", "Docker", "AWS", "Cypress", "Postman", "SQL Server", "MySQL", "Figma", "VS Code"],
     },
   ];
 
